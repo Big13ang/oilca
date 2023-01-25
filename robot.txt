@@ -1,0 +1,5 @@
+domain.com/index.html
+domain.com/contactus.html
+domain.com/faq.html
+domain.com/aboutus.html
+

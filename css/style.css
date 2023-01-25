@@ -1,0 +1,1316 @@
+/* 1-9x12 */
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem = 10px = 62.5% */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-orange: #FF7930;
+    --color-blue: #3C5AA8;
+    --color-white: #fff;
+    --color-main-white: #FAFAFA;
+    --color-gery: #c9cbd1;
+    --color-black: #333;
+    --color-gold: #FFCD29;
+    --color-orange-404: #F64E60;
+    --w-orange-line: 8rem;
+    --font-iran-sans: "IRANSans";
+    --font-iran-yekan: "iranyekan";
+    --font-inter: "Inter";
+
+    /* #F4F4F4 */
+    /* Sellers back-ground box */
+    /*question    #151618 */
+    /* Answer     #7B808C */
+    /* border     #C9CBD1 */
+    /* Arrow      #2F3136 */
+}
+
+/*! ***********  */
+/*!  Iran Sans  */
+/*! ***********  */
+
+@font-face {
+    font-family: "IRANSans";
+    font-style: normal;
+    font-weight: 900;
+
+    src: url('../fonts/IranSans/eot/IRANSansWeb_Black.eot');
+    src: url('../fonts/IranSans/eot/IRANSansWeb_Black.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/IranSans/woff2/IRANSansWeb_Black.woff2') format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+        url('../fonts/IranSans/woff/IRANSansWeb_Black.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/IranSans/ttf/IRANSansWeb_Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "IRANSans";
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/IranSans/eot/IRANSansWeb_Bold.eot');
+    src: url('../fonts/IranSans/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/IranSans/woff2/IRANSansWeb_Bold.woff2') format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+        url('../fonts/IranSans/woff/IRANSansWeb_Bold.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/IranSans/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "IRANSans";
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/IranSans/eot/IRANSansWeb_Medium.eot');
+    src: url('../fonts/IranSans/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/IranSans/woff2/IRANSansWeb_Medium.woff2') format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+        url('../fonts/IranSans/woff/IRANSansWeb_Medium.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/IranSans/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "IRANSans";
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/IranSans/eot/IRANSansWeb_Light.eot');
+    src: url('../fonts/IranSans/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/IranSans/woff2/IRANSansWeb_Light.woff2') format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+        url('../fonts/IranSans/woff/IRANSansWeb_Light.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/IranSans/ttf/IRANSansWeb_Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "IRANSans";
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/IranSans/eot/IRANSansWeb_UltraLight.eot');
+    src: url('../fonts/IranSans/eot/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/IranSans/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+        url('../fonts/IranSans/woff/IRANSansWeb_UltraLight.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/IranSans/ttf/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "IRANSans";
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/IranSans/eot/IRANSansWeb.eot');
+    src: url('../fonts/IranSans/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/IranSans/woff2/IRANSansWeb.woff2') format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+        url('../fonts/IranSans/woff/IRANSansWeb.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/IranSans/ttf/IRANSansWeb.ttf') format('truetype');
+}
+
+
+/*! **********  */
+/*! Iran Yekan  */
+/*! **********  */
+
+@font-face {
+    font-family: "iranyekan";
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/IranYekan/eot/iranyekanwebbold.eot');
+    src: url('../fonts/IranYekan/eot/iranyekanwebbold.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/IranYekan/woff/iranyekanwebbold.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/IranYekan/ttf/iranyekanwebbold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "iranyekan";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/IranYekan/eot/iranyekanwebthin.eot');
+    src: url('../fonts/IranYekan/eot/iranyekanwebthin.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/IranYekan/woff/iranyekanwebthin.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/IranYekan/ttf/iranyekanwebthin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "iranyekan";
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/IranYekan/eot/iranyekanweblight.eot');
+    src: url('../fonts/IranYekan/eot/iranyekanweblight.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/IranYekan/woff/iranyekanweblight.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/IranYekan/ttf/iranyekanweblight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "iranyekan";
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/IranYekan/eot/iranyekanwebregular.eot');
+    src: url('../fonts/IranYekan/eot/iranyekanwebregular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/IranYekan/woff/iranyekanwebregular.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/IranYekan/ttf/iranyekanwebregular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "iranyekan";
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/IranYekan/eot/iranyekanwebmedium.eot');
+    src: url('../fonts/IranYekan/eot/iranyekanwebmedium.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/IranYekan/woff/iranyekanwebmedium.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/IranYekan/ttf/iranyekanwebmedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "iranyekan";
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/IranYekan/eot/iranyekanwebextrabold.eot');
+    src: url('../fonts/IranYekan/eot/iranyekanwebextrabold.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/IranYekan/woff/iranyekanwebextrabold.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/IranYekan/ttf/iranyekanwebextrabold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "iranyekan";
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/IranYekan/eot/iranyekanwebblack.eot');
+    src: url('../fonts/IranYekan/eot/iranyekanwebblack.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/IranYekan/woff/iranyekanwebblack.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/IranYekan/ttf/iranyekanwebblack.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "iranyekan";
+    font-style: normal;
+    font-weight: 950;
+    src: url('../fonts/IranYekan/eot/iranyekanwebextrablack.eot');
+    src: url('../fonts/IranYekan/eot/iranyekanwebextrablack.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/IranYekan/woff/iranyekanwebextrablack.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/IranYekan/ttf/iranyekanwebextrablack.ttf') format('truetype');
+}
+
+/*! ***********  */
+/*!  Inter  */
+/*! ***********  */
+
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/Inter/Inter/static/Inter-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/Inter/Inter/static/Inter-Thin.ttf');
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/Inter/Inter/static/Inter-Light.ttf');
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Inter/Inter/static/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Inter/Inter/static/Inter-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/Inter/Inter/static/Inter-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/Inter/Inter/static/Inter-ExtraBold.ttf');
+
+}
+
+
+body {
+    font-family: "IRANSans", "iranyekan", "Tahoma";
+    color: var(--color-white);
+}
+
+
+/* Components  */
+.section-title {
+    font-family: var(--font-iran-yekan);
+    font-size: 3.25rem;
+    font-weight: 900;
+    color: var(--color-black);
+    position: relative;
+    z-index: 0;
+}
+
+.section-title:before {
+    content: "";
+    background: var(--color-orange);
+    position: absolute;
+    z-index: -10;
+    display: inline-block;
+    width: 8.5rem;
+    height: 0.75rem;
+    border-radius: 4rem;
+    top: -1.75rem;
+    right: 0;
+}
+
+.heading {
+    display: none;
+}
+
+/* components end */
+.hero {
+    height: 100vh;
+    max-height: 90rem;
+    background: url("../img/hero-car.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-header {
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    padding: 3rem 4rem;
+}
+
+.open-menu,
+.close-menu {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: start;
+    gap: 1rem;
+}
+
+.logo-info {
+    font-weight: 400;
+}
+
+.logo-title {
+    font-size: 1.8rem;
+}
+
+.logo-slogan {
+    font-size: 1.25rem;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-nav .nav-link {
+    color: var(--color-white);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 0.25rem;
+    border-bottom: 0.5rem solid transparent;
+    border-radius: 0.1rem;
+    transition: all 0.3s ease;
+    padding: 0 1.75rem;
+}
+
+.main-nav:hover .nav-link {
+    border-bottom: 0.5rem solid transparent;
+}
+
+.main-nav .nav-link:hover {
+    border-bottom: 0.5rem solid var(--color-orange);
+}
+
+.nav-link.active {
+    border-bottom: 0.5rem solid var(--color-orange);
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 12.5rem;
+}
+
+.hero-title {
+    font-family: var(--font-iran-yekan);
+    /* letter-spacing: 0.25rem; */
+    font-size: 7.75rem;
+    font-weight: 900;
+    color: var(--color-gold);
+    margin-bottom: 6rem;
+}
+
+.hero-subtitle {
+    font-family: var(--font-iran-yekan);
+    /* letter-spacing: 0.25rem; */
+    font-size: 4.25rem;
+    font-weight: 900;
+    margin-bottom: 8.5rem;
+}
+
+.hero .download-btn {
+    width: 27rem;
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    font-family: var(--font-iran-sans);
+    font-size: 2.75rem;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: all 0.5s ease;
+}
+
+.hero .download-btn:hover {
+    background-color: #30416c;
+    cursor: pointer;
+}
+
+/* car-service Section */
+.car-service {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    padding: 4rem;
+
+    background: url(img/settingWhite.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.service__img {
+    width: 100%;
+}
+
+.car-service .col-right {
+    padding-top: 15rem;
+    color: var(--color-black);
+}
+
+.car-service__brand {
+    color: var(--color-orange);
+    padding: 0 0.5rem;
+    padding-top: 1rem;
+    display: inline-block;
+    border-radius: 1rem;
+}
+
+.car-service__title {
+    font-size: 3.75rem;
+    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+
+}
+
+.car-service__info {
+    font-size: 2rem;
+    line-height: 2;
+    font-weight: 500;
+}
+
+/* Our-services */
+
+.our-services {
+    max-width: 1700px;
+
+    margin: 0 auto;
+    margin-top: 10rem;
+    padding: 45rem 8rem;
+    padding-bottom: 5rem;
+    height: 120vh;
+    background: url("../img/car-white.png");
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    column-gap: 5rem;
+    font-size: 2.5rem;
+}
+
+.our-services__title {
+    position: relative;
+    grid-column: 1/-1;
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: var(--font-iran-yekan);
+    margin-bottom: 4rem;
+}
+
+.our-services__title:after {
+    content: "";
+    background: var(--color-white);
+    position: absolute;
+    z-index: 0;
+    display: inline-block;
+    width: 20rem;
+    height: 0.6rem;
+    border-radius: 4rem;
+    top: 6.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+.our-serices__item {
+    background-color: var(--color-white);
+    padding: 1rem 4rem;
+    border-radius: 3rem;
+    box-shadow: 0px 10px 15px -3px rgb(0 0 0 / 20%);
+    height: 32rem;
+}
+
+.our-serices__item-title {
+    color: var(--color-blue);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 2rem 0;
+}
+
+.our-serices__item-info {
+    color: var(--color-black);
+    font-size: 1.75rem;
+    text-align: justify;
+    line-height: 2;
+}
+
+.spliter {
+    height: 20vh;
+}
+
+/* Products */
+.products {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 2rem;
+    row-gap: 5rem;
+    max-width: 150rem;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+
+.products__title {
+    grid-column: 1/-1;
+    justify-self: start;
+    margin-right: 4rem;
+}
+
+.section-title.products__title::before {
+    right: 0;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.product__img {
+    display: block !important;
+    width: 100%;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+
+.product.air-filter-2 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+
+.product.motor-oil {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+
+.product.wax-and-spery {
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+
+.product__btn {
+    font-size: 2.25rem;
+    font-family: var(--font-iran-sans);
+    background: white;
+    padding: 0.75rem 2.5rem;
+    border-radius: 1rem;
+    grid-column: 1;
+    grid-row: 1;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.product:hover .product__btn {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    display: inline-block;
+    z-index: 100;
+}
+
+.products:hover .product__img {
+    filter: brightness(50%);
+}
+
+.products .product__img:hover {
+    filter: brightness(100%);
+}
+
+
+/* Download-app */
+.download-app {
+    max-width: 1700px;
+    margin: 0 auto;
+    height: 60rem;
+    display: flex;
+    align-items: end;
+    position: relative;
+    margin-bottom: 8rem;
+}
+
+.donwload-app__box {
+    display: flex;
+    height: 40rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    background: url("../img/Frame 3811.jpg");
+    background-size: cover;
+    margin: 0 6rem;
+    border-radius: 5rem;
+}
+
+.download-app__title.section-title {
+    font-size: 3rem;
+    font-family: var(--font-iran-sans);
+    font-weight: 600;
+}
+
+.download-app__title.section-title::before {
+    display: none;
+}
+
+.download-app__describtion {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--color-black);
+}
+
+.download-app__right-col {
+    display: grid;
+    grid-gap: 5rem;
+}
+
+.dowanload-app__demo-img {
+    height: 60rem;
+    top: 0;
+    left: 5%;
+    position: absolute;
+}
+
+.download-app__stores {
+    display: flex;
+    align-items: center;
+}
+
+.dowanload-app__img {
+    margin-left: 2rem;
+}
+
+/* sellers */
+.sellers {
+    max-width: 1860px;
+    display: block;
+    margin: 4rem auto;
+    margin-top: 0;
+}
+
+.sellers .box {
+    max-width: 1700px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+    background: #f5f5f5;
+    margin: 0 6rem;
+    padding: 1rem 0;
+    border-radius: 2rem;
+    column-gap: 4rem;
+    box-shadow: 0px 0px 20px 5px rgba(85, 85, 85, 0.25);
+    margin-bottom: 10rem;
+}
+
+.sellers__title {
+    margin-right: 6rem;
+    margin-bottom: 4rem;
+}
+
+
+/* footer */
+.footer {
+    background: var(--color-blue);
+    border-top-right-radius: 10rem;
+    border-top-left-radius: 10rem;
+}
+
+.footer .logo-slogan {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.footer-brand {
+    border-bottom: 2px solid #fcfcfc;
+    padding: 2rem 0 1rem 0;
+}
+
+.footer .logo-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 3rem 5rem;
+    font-size: 2rem;
+}
+
+.footer__quic-access ul {
+    list-style: none;
+}
+
+.quic-access__title {
+    border-bottom: 2px solid white;
+    padding-bottom: 0.75rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.quic-access__item {
+    padding: 0.5rem 0;
+}
+
+.quic-access__item:first-child {
+    padding-top: 0;
+}
+
+.quic-access__link {
+    color: var(--color-main-white);
+    font-size: 1.75rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in;
+}
+
+.quic-access__link:hover {
+    color: #FFCD29;
+}
+
+.contact-us__address {
+    margin-bottom: 2rem;
+}
+
+.trust-imgs-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.trust-img {
+    padding: 0.5rem;
+}
+
+
+.footer__trust-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact-us__address,
+.contact-us__phone {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-us__phone-number {
+    direction: ltr;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social-media {
+    text-align: center;
+}
+
+.social-media {
+    margin-left: 2rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.footer-copy-right {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.footer-copy-right .vesta {
+    color: #ffd23b;
+    text-decoration: none;
+}
+
+.footer-copy-right,
+.footer-social-media,
+.footer-content {
+    margin: 0 auto;
+    max-width: 1520px;
+}
+
+
+/* about-us */
+.about-us {
+    padding: 10rem 5rem;
+}
+
+.about-us__title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    margin-bottom: 4rem;
+}
+
+.about-us__title.section-title:before {
+    width: 6.5rem;
+}
+
+.about-us__info {
+    font-size: 2.5rem;
+    color: var(--color-black);
+    line-height: 3;
+    text-align: justify;
+}
+
+.about-us__information {
+    margin-bottom: 8rem;
+}
+
+
+/* about-us products */
+.about-us__our-products {
+    margin-bottom: 12rem;
+}
+
+.our-products__title {
+    font-family: var(--font-iran-sans);
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.our-products__title.section-title:before {
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
+.our-products__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+}
+
+
+.gallery__item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.gallery__img {
+    display: block !important;
+    width: 90%;
+    grid-row: 1;
+    grid-column: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.gallery__item-btn {
+    font-size: 2.25rem;
+    font-family: var(--font-iran-sans);
+    background: white;
+    padding: 0.75rem 2.5rem;
+    border-radius: 1rem;
+    grid-column: 1;
+    grid-row: 1;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.gallery__item:hover .gallery__item-btn {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    display: inline-block;
+    z-index: 100;
+}
+
+.our-products__gallery:hover .gallery__img,
+.our-activity__gallery:hover .gallery__img {
+    filter: brightness(50%);
+}
+
+.our-products__gallery .gallery__img:hover,
+.our-activity__gallery .gallery__img:hover {
+    filter: brightness(100%);
+}
+
+.our-activity__title {
+    margin: 0 4rem 4rem 0;
+    font-family: var(--font-iran-sans);
+}
+
+.our-activity__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    padding: 0 4rem;
+}
+
+.our-activity__gallery .gallery__img {
+    width: 100%;
+}
+
+/* about-us our-activity */
+.about-us__our-activity {
+    margin-bottom: 12rem;
+}
+
+/* about-us top-agents */
+.top-agents__title {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-family: var(--font-iran-sans);
+    font-size: 3.5rem;
+}
+
+.top-agents__title.section-title:before {
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
+.about-us__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.about-us__agent-img {
+    margin-bottom: 2rem;
+}
+
+.about-us__agent-caption {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--color-black);
+    text-align: center;
+}
+
+.about-us__name {
+    color: var(--color-black);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.about-us__post {
+    font-size: 1.75rem;
+    color: #909090;
+}
+
+/* Faq */
+.faq {
+    padding: 10rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.faq-title,
+.contact-us-title {
+    font-family: var(--font-iran-sans);
+    margin-bottom: 6rem;
+}
+
+/* Accordian */
+.accordian {
+    color: var(--color-black);
+    font-family: var(--font-iran-sans);
+    font-size: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+}
+
+.accordian__title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    position: relative;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+}
+
+.accordian__title::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 1.75rem;
+    height: 1.75rem;
+    top: 50%;
+    right: -3rem;
+    transform: translate(0, -50%);
+    border-radius: 100%;
+    background: var(--color-orange);
+}
+
+.accordian__item {
+    padding: 3rem;
+    border: 2px solid #C9CBD1;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+}
+
+.accordian__item-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item-question__arrow {
+    height: 1.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.item-question__text {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* answer */
+.accordian__item-answer {
+    position: relative;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.3s ease-in;
+    height: 0;
+}
+
+.accordian__item-answer li {
+    color: #7B808C;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.accordian__item-answer li::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background: #c9cbd1;
+}
+
+/* open */
+.accordian__item.open .accordian__item-answer {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    display: inline-block;
+    height: auto;
+}
+
+.accordian__item.open .item-question__arrow {
+    transform: rotate(180deg);
+}
+
+/* Contact us */
+.contact-us {
+    color: var(--color-black);
+    background-color: #FAFAFA;
+    padding: 8rem 6rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.contact-us__info {
+    margin-bottom: 8rem;
+}
+
+.contact-us__address,
+.contact-us__phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    font-size: 2.75rem;
+}
+
+.contact-us__phone-number {
+    color: var(--color-dark);
+    font-weight: 500;
+}
+
+.social-media__title {
+    margin-bottom: 2rem;
+    color: var(--color-black);
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.contact-us__social-media {
+    text-align: center;
+}
+
+/* Form */
+.contact-us__left-col {
+    border: 1.75rem solid var(--color-blue);
+    border-radius: 2.5rem;
+    background-color: #FAFAFA;
+    margin-right: 16rem;
+    padding: 2rem;
+}
+
+.contact-us__title {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.contact-us__discribtion {
+    font-size: 2rem;
+}
+
+.input-gruop {
+    position: relative;
+    width: 42rem;
+    margin: 1rem auto;
+}
+
+/* Form input animation */
+.contact-us__form-input {
+    width: 100%;
+    border: 2px solid #D6D6D6;
+    resize: none;
+    outline: none;
+    height: 4.5rem;
+    border-radius: 0.75rem;
+    font-size: 1.5rem;
+    padding: 0 1.5rem 0 0;
+    font-family: var(--font-iran-sans);
+    transition: all 0.3s ease-out;
+}
+
+.contact-us__form-lable {
+    font-size: 1.5rem;
+    color: #757575;
+    position: absolute;
+    z-index: 0;
+    visibility: hidden;
+    top: 8px;
+    right: 10px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-us__invalid-form-lable {
+    font-size: 1.5rem;
+    color: #FF0000;
+    opacity: 0;
+    transition: all 0.3 ease-in-out;
+}
+
+.contact-us__form-input:invalid {
+    border-color: #FF0000;
+}
+
+.contact-us__form-input:invalid~.contact-us__invalid-form-lable {
+    opacity: 1;
+}
+
+.contact-us__form-input::placeholder {
+    color: #757575;
+    text-align: right;
+    transition: all 0.3s ease-out;
+}
+
+.contact-us__form-input:focus {
+    border-color: var(--color-blue);
+}
+
+.contact-us__form-input:focus::placeholder {
+    opacity: 0;
+}
+
+.contact-us__form-input:focus+.contact-us__form-lable {
+    top: -15px;
+    opacity: 1;
+    visibility: visible;
+    background: #fff;
+    color: #333;
+    padding: 0 0.5rem;
+    padding-bottom: 0;
+}
+
+.contact-us__form-input.form-input_message {
+    height: 14rem;
+    padding-top: 1rem;
+}
+
+.contact-us__form-lable.form-lable_captcha {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+}
+
+
+.capcha {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23D7D7D7FF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
+    height: 68px;
+    margin: 1rem auto;
+}
+
+.contact-us__form-btn {
+    margin: 0 auto;
+    display: block;
+    font-size: 1.75rem;
+    font-family: 'IRANSans';
+    color: white;
+    background: var(--color-blue);
+    padding: 0.75rem 8rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-us__form-btn:hover {
+    background: #1e2e55;
+}
+
+.contact-us__form-btn:focus {
+    outline: none;
+    box-shadow: 0px 10px 32px -3px rgba(0, 0, 0, 0.7);
+}
+
+
+/* 404 */
+.content {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.text-404 {
+    font-family: var(--font-inter);
+    color: var(--color-orange-404);
+    font-size: 16rem;
+    font-weight: 300;
+}
+
+.not-found {
+    font-family: var(--font-iran-sans);
+    color: #201F1F;
+    font-size: 4rem;
+}

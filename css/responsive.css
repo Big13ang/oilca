@@ -1,0 +1,1114 @@
+@media (max-width: 1441.98px) {
+
+    /* Hero */
+    .hero .content {
+        padding-top: 10.5rem;
+
+    }
+
+    .hero-title {
+        font-size: 5.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 3.35rem;
+    }
+
+    .our-services {
+        margin-top: 10rem;
+        padding: 45rem 8rem;
+        height: 120vh;
+        background: url("../img/car-white.png");
+        background-size: cover;
+        background-position: center center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        column-gap: 5rem;
+        font-size: 2.5rem;
+    }
+
+    .our-services__title {
+        position: relative;
+        grid-column: 1/-1;
+        font-size: 3.5rem;
+        font-weight: 900;
+        font-family: var(--font-iran-yekan);
+        margin-bottom: 8rem;
+
+    }
+
+    .our-services__title:after {
+        content: "";
+        background: var(--color-white);
+        position: absolute;
+        z-index: 0;
+        display: inline-block;
+        width: 20rem;
+        height: 0.6rem;
+        border-radius: 4rem;
+        top: 6.5rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .our-serices__item {
+        background-color: var(--color-white);
+        padding: 1rem 4rem;
+        border-radius: 3rem;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+        height: 30rem;
+    }
+
+    .our-serices__item-title {
+        color: var(--color-blue);
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin: 2rem 0;
+    }
+
+    .our-serices__item-info {
+        color: var(--color-black);
+        font-size: 1.45rem;
+        text-align: justify;
+        line-height: 2;
+    }
+
+    .spliter {
+        height: 10vh;
+    }
+
+    /* products */
+    .products {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        justify-items: center;
+        align-items: center;
+        padding: 0px 2rem;
+        row-gap: 3rem;
+        margin-bottom: 10rem;
+        column-gap: 2rem;
+    }
+
+    .products__title {
+        grid-column: 1/-1;
+        justify-self: start;
+        margin-right: 4rem;
+    }
+
+    .section-title.products__title::before {
+        right: 0;
+    }
+
+    .product {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .product__img {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .product__img img {
+        width: 100%;
+        display: block;
+    }
+
+    .product.air-filter-2 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+
+    .product.motor-oil {
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+
+
+    .product.wax-and-spery {
+        grid-column: 3/4;
+        grid-row: 2/4;
+    }
+
+    .product__btn {
+        font-size: 2.25rem;
+        font-family: var(--font-iran-sans);
+        background: white;
+        padding: 0.75rem 2.5rem;
+        border-radius: 1rem;
+        grid-column: 1;
+        grid-row: 1;
+        cursor: pointer;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+    }
+
+
+    /* Download-app */
+    .download-app {
+        max-width: 1920px;
+        margin: 0 auto;
+        margin-bottom: 8rem;
+        height: 50rem;
+        display: flex;
+        align-items: end;
+        position: relative;
+    }
+
+    .donwload-app__box {
+        display: flex;
+        height: 35rem;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5rem;
+        background: url("../img/Frame 3811.jpg");
+        background-size: cover;
+        margin: 0 6rem;
+        border-radius: 5rem;
+    }
+
+    .download-app__title.section-title {
+        font-size: 3rem;
+        font-family: var(--font-iran-sans);
+        font-weight: 600;
+    }
+
+    .download-app__title.section-title::before {
+        display: none;
+    }
+
+    .download-app__describtion {
+        font-size: 2rem;
+        font-weight: 500;
+        color: var(--color-black);
+    }
+
+    .download-app__right-col {
+        display: grid;
+        grid-gap: 5rem;
+    }
+
+    .dowanload-app__demo-img {
+        height: 50rem;
+        top: 0;
+        left: 5%;
+        position: absolute;
+    }
+
+    .download-app__stores {
+        display: flex;
+        align-items: center;
+    }
+
+    .download-app__stores-link {
+        width: 40%;
+        margin-left: 2rem;
+    }
+
+    .dowanload-app__img {
+        width: 100%;
+    }
+
+    /* Sellers */
+    .sellers .box {
+        column-gap: 1rem;
+    }
+
+    /* Contact-us */
+    .contact-us {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-us__left-col {
+        margin-right: 0;
+    }
+
+    /* About-us */
+    .about-us__our-products .gallery__img img,
+    .about-us__our-activity .gallery__img img {
+        width: 100%;
+    }
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .main-header {
+        padding: 3rem 2rem;
+        grid-template-columns: 25% 75%;
+    }
+
+    .logo-slogan {
+        font-size: 1.25rem;
+    }
+
+    .hero .content {
+        padding-top: 7.5rem;
+    }
+
+    .hero-title {
+        margin-bottom: 5.25rem;
+        font-size: 6rem;
+    }
+
+    .hero-subtitle {
+        margin-bottom: 4.5rem;
+        font-size: 3.75rem;
+    }
+
+    /* car-service */
+
+    .car-service__title {
+        font-size: 2.5rem;
+        margin: 1rem 0;
+    }
+
+    .car-service__info {
+        font-size: 1.75rem;
+    }
+
+    /* Our-services */
+
+    .our-services {
+        padding: 45rem 3rem;
+        column-gap: 2rem;
+    }
+
+    .our-serices__item {
+        padding: 1rem 2rem;
+        height: 27rem;
+    }
+
+    .our-serices__item-title {
+        margin: 1rem 0;
+    }
+
+    /* dowanload-app */
+    .download-app {
+        height: 40rem;
+    }
+
+    .donwload-app__box {
+        height: 28rem;
+    }
+
+    .download-app__right-col {
+        grid-gap: 2rem;
+    }
+
+    .download-app__title.section-title {
+        font-size: 2.25rem;
+    }
+
+    .download-app__describtion {
+        font-size: 1.5rem;
+    }
+
+    .dowanload-app__demo-img {
+        height: 40rem;
+        left: 7%;
+    }
+
+    .download-app__stores-link {
+        width: 32%;
+    }
+
+    /* Sellers */
+    .sellers .box {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 1rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .main-header {
+        grid-template-columns: 30% 70%;
+        padding: 1rem;
+    }
+
+    .hero {
+        max-height: 68vh;
+    }
+
+    .hero-title {
+        font-size: 5rem;
+    }
+
+    .main-nav {
+        justify-content: space-evenly;
+    }
+
+    .main-nav .nav-link {
+        font-size: 1.75rem;
+    }
+
+    .hero .content {
+        padding-top: 8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2.75rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .hero .download-btn {
+        width: 20rem;
+        font-size: 1.75rem;
+    }
+
+    /* car-service */
+    .car-service__title {
+        font-size: 2rem;
+    }
+
+    .car-service__info {
+        font-size: 1.5rem;
+    }
+
+    /* our-services */
+    .our-services {
+        padding: 25rem 2rem;
+        margin-bottom: 10rem;
+        max-height: 30vh;
+    }
+
+    .our-services__title {
+        font-size: 3rem;
+        margin-bottom: 6rem;
+    }
+
+    .our-services__title:after {
+        width: 20rem;
+    }
+
+    .our-serices__item-title {
+        font-size: 1.5rem;
+    }
+
+    .our-serices__item-info {
+        font-size: 1.3rem;
+    }
+
+    /* products */
+    .products {
+        margin-bottom: 5rem;
+    }
+
+    /* download-app */
+    .download-app {
+        height: 35rem;
+    }
+
+    .dowanload-app__demo-img {
+        height: 35rem;
+    }
+
+    .donwload-app__box {
+        height: 25rem;
+        border-radius: 4rem;
+    }
+
+    .download-app__describtion {
+        font-size: 1.25rem;
+    }
+
+    .download-app__stores-link {
+        width: 30%;
+    }
+
+    /* footer */
+    .footer-content {
+        padding: 3rem;
+    }
+
+    .contact-us__address,
+    .contact-us__phone {
+        font-size: 1.75rem;
+    }
+
+    /* about-us our-top agents */
+    .about-us__container {
+        row-gap: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact-us */
+    .contact-us {
+        grid-template-columns: 1fr;
+        padding: 8rem 20rem;
+    }
+
+    .contact-us__info {
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 820.98px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .main-header {
+        grid-template-columns: 75% 25%;
+        background-color: rgb(60 90 168 / 50%);
+        padding: 0.5rem;
+        box-shadow: 0px 19px 15px -3px rgba(0, 0, 0, 0.25);
+    }
+
+    .logo {
+        z-index: 10;
+    }
+
+    .logo-title {
+        font-size: 2.5rem;
+    }
+
+    .logo-slogan {
+        font-size: 1.5rem;
+    }
+
+    .logo-link {
+        width: 25%;
+    }
+
+    .open-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        width: 5rem;
+        justify-self: center;
+        z-index: 100;
+    }
+
+
+    .close-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        width: 5rem;
+        justify-self: center;
+        z-index: 100;
+    }
+
+    .close-menu__icon {
+        width: 4rem;
+    }
+
+    .open-menu__icon {
+        width: 4.5rem;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(60 90 168 / 90%);
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .main-header.open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
+
+    .main-header.open .open-menu,
+    .main-header .close-menu {
+        display: none;
+    }
+
+    .main-header.open .close-menu,
+    .main-header .open-menu {
+        display: flex;
+    }
+
+
+    .main-nav .nav-link {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .hero .content {
+        padding-top: 0rem;
+        justify-content: center;
+        height: calc(100% - 10rem);
+    }
+
+    .hero-title {
+        font-size: 5rem;
+        margin-bottom: 4.25rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2.75rem;
+        margin-bottom: 4rem;
+    }
+
+    .hero .download-btn {
+        font-size: 2.25rem;
+        width: 27.5rem;
+    }
+
+    /* car-service */
+    .car-service {
+        background-size: 22rem;
+    }
+
+    .car-service .col-right {
+        padding-top: 10rem;
+    }
+
+    .car-service__brand {
+        font-size: 2.5rem;
+    }
+
+    .car-service__title {
+        font-size: 1.75rem;
+    }
+
+    .car-service__info {
+        font-size: 1.25rem;
+        padding: 1rem;
+    }
+
+    /* our-services */
+    .our-services {
+        height: 40vh;
+        grid-template-columns: 1fr;
+        margin-top: 5rem;
+        margin-bottom: 80rem;
+        padding: 20rem 2rem;
+        row-gap: 3rem;
+    }
+
+    .our-services__title {
+        margin-bottom: 3rem;
+    }
+
+    .our-serices__item {
+        width: 42rem;
+        padding: 2rem 4rem;
+    }
+
+    .our-serices__item-title {
+        font-size: 2rem;
+    }
+
+    .our-serices__item-info {
+        font-size: 1.5rem;
+    }
+
+    /* products */
+    .products {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 25rem;
+    }
+
+    .products__title {
+        justify-self: center;
+        margin-right: 0;
+    }
+
+    .product__img {
+        display: block !important;
+        width: 100%;
+    }
+
+    .product.motor-oil,
+    .product.wax-and-spery,
+    .product.air-filter-2 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    /* download-app */
+    .download-app {
+        margin-bottom: 8rem;
+    }
+
+    .dowanload-app__demo-img {
+        position: static;
+    }
+
+    .donwload-app__box {
+        flex-direction: column-reverse;
+        padding-bottom: 2rem;
+    }
+
+    .download-app__right-col {
+        text-align: center;
+    }
+
+    .download-app__stores {
+        justify-content: space-around;
+    }
+
+    .download-app__title.section-title {
+        font-size: 2.75rem;
+    }
+
+    .download-app__describtion {
+        font-size: 1.75rem;
+    }
+
+    .download-app__stores-link {
+        width: 35%;
+    }
+
+    /* Seller */
+    .sellers__title {
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    .sellers__title::before {
+        right: 50%;
+        transform: translate(95%, 0);
+    }
+
+    .sellers .box {
+        margin: 0 2rem;
+    }
+
+    /* footer */
+    .footer {
+        border-top-left-radius: 5rem;
+        border-top-right-radius: 5rem;
+    }
+
+    .footer .logo-link {
+        width: 15%;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        justify-items: start;
+        row-gap: 3rem;
+    }
+
+    .footer__quic-access,
+    .footer__trust {
+        grid-row: 1/2;
+    }
+
+    .footer .logo-slogan {
+        font-size: 1.75rem;
+        padding: 0 5rem;
+    }
+
+    /* about-us */
+    .about-us {
+        padding: 10rem 4rem;
+    }
+
+    .about-us__info {
+        line-height: 2.25;
+    }
+
+    /* about-us our-products */
+    .our-products__gallery {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5rem;
+    }
+
+    /* about-us our-activity */
+    .our-activity__gallery {
+        padding: 0;
+        gap: 2rem;
+    }
+
+    .our-activity__title {
+        font-size: 2.75rem;
+    }
+
+    /* faq */
+    .faq {
+        padding: 5rem 3rem;
+    }
+
+    .accordian {
+        margin-bottom: 4rem;
+    }
+
+    .accordian__item {
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .item-question__text {
+        font-size: 1.75rem;
+    }
+
+    /* Contact-us */
+    .contact-us {
+        padding: 4rem 8rem;
+    }
+
+    .faq-title,
+    .contact-us-title {
+        margin-bottom: 4rem;
+    }
+
+    .input-gruop {
+        width: 35rem;
+    }
+
+    /* 404 */
+    .text-404 {
+        font-size: 12rem;
+    }
+
+    .not-found {
+        font-size: 2.5rem;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    html {
+        font-size: 50%;
+    }
+
+    .hero {
+        background-position: 0% center;
+        max-height: 45vh;
+    }
+
+    .main-header {
+        grid-template-columns: 80% 20%;
+        background-color: rgb(60 90 168 / 50%);
+        padding: 0.5rem;
+        box-shadow: 0px 19px 15px -3px rgba(0, 0, 0, 0.25);
+    }
+
+    .logo {
+        z-index: 10;
+    }
+
+    .logo-title {
+        font-size: 2.5rem;
+    }
+
+    .logo-slogan {
+        font-size: 1.5rem;
+    }
+
+    .logo-link {
+        width: 30%;
+    }
+
+    .open-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        width: 5rem;
+        justify-self: center;
+        z-index: 100;
+    }
+
+
+    .close-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        width: 5rem;
+        justify-self: center;
+        z-index: 100;
+    }
+
+    .close-menu__icon {
+        width: 4rem;
+    }
+
+    .open-menu__icon {
+        width: 4.5rem;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(60 90 168 / 90%);
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .main-header.open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
+
+    .main-header.open .open-menu,
+    .main-header .close-menu {
+        display: none;
+    }
+
+    .main-header.open .close-menu,
+    .main-header .open-menu {
+        display: flex;
+    }
+
+
+    .main-nav .nav-link {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero .content {
+        padding-top: 5%;
+    }
+
+    .hero-title {
+        margin-bottom: 2rem;
+        font-size: 4.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .hero .download-btn {
+        width: 25rem;
+        font-size: 2rem;
+    }
+
+    /* car-service */
+    .car-service {
+        grid-template-columns: 1fr;
+        background-size: 15rem;
+        background-position: top right;
+    }
+
+    .car-service .col-right {
+        padding-top: 2rem;
+    }
+
+    .car-service .col-left picture {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .service__img {
+        width: 75%;
+        align-self: center;
+    }
+
+    .section-title:before.car-service__brand {
+        width: 10rem;
+        height: 0.75rem;
+        border-radius: 10rem;
+        top: -1.75rem;
+        left: -10px;
+    }
+
+    /* our-Services */
+    .our-services {
+        height: 30vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding: 10rem 0;
+        row-gap: 3rem
+    }
+
+    /* Products */
+    .products {
+        margin-bottom: 35rem;
+    }
+
+    .motor-oil .product__img {
+        width: 70%;
+    }
+
+    /* download-app */
+    .download-app__title.section-title {
+        font-size: 2.25rem;
+    }
+
+    .download-app__describtion {
+        font-size: 1.5rem;
+    }
+
+    .download-app__stores-link {
+        width: 55%;
+        margin-left: 0;
+    }
+
+    .download-app__stores {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Sellers */
+    .sellers .box {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1rem;
+        column-gap: 0;
+        margin: 0 2rem;
+    }
+
+    /* footer */
+    .footer-content {
+        padding: 3rem 1.25rem;
+    }
+
+    .footer__quic-access,
+    .footer__trust {
+        grid-row: auto;
+    }
+
+    .footer__trust {
+        justify-self: center;
+    }
+
+    /* about-us */
+    .about-us {
+        padding-bottom: 2rem;
+    }
+
+    /* about-us our-products */
+    .our-products__gallery {
+        grid-template-columns: 1fr;
+    }
+
+    /* about-us our-activity */
+    .about-us__our-activity {
+        margin-bottom: 8rem;
+    }
+
+    .about-us__agent-img {
+        width: 70%;
+    }
+
+    .our-activity__gallery {
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+    }
+
+    /* about-us top-agents */
+    .about-us__agent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Contact-us */
+    .contact-us {
+        padding: 4rem 2rem;
+    }
+
+
+}
+
+@media (max-width: 375.98px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero .logo-slogan {
+        font-size: 1.25rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.75rem;
+    }
+
+    .hero .download-btn {
+        font-size: 1.5rem;
+    }
+
+    .our-serices__item {
+        width: 34rem;
+    }
+
+    .our-serices__item-title {
+        font-size: 1.5rem;
+    }
+
+    .car-service__title {
+        font-size: 1.5rem;
+    }
+
+    .our-services {
+        margin-bottom: 85rem;
+    }
+
+    .spliter {
+        height: 2vh;
+    }
+
+
+    .donwload-app__box {
+        padding: 0;
+    }
+
+    .box__item-img {
+        width: 14rem;
+    }
+
+    .trust-img {
+        width: 12rem;
+    }
+
+    .footer .logo-slogan {
+        font-size: 1.5rem;
+    }
+
+    .contact-us__address,
+    .contact-us__phone {
+        font-size: 2rem;
+    }
+
+    /* contact-us */
+
+    .contact-us__left-col {
+        border: 1rem solid var(--color-blue);
+    }
+
+    .contact-us__discribtion {
+        font-size: 1.75rem;
+    }
+
+    .input-gruop {
+        width: 26rem;
+    }
+}
