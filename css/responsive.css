@@ -3,7 +3,6 @@
     /* Hero */
     .hero .content {
         padding-top: 10.5rem;
-
     }
 
     .hero-title {
@@ -1110,5 +1109,20 @@
 
     .input-gruop {
         width: 26rem;
+    }
+}
+
+/* landscape */
+@media only screen and (orientation:landscape) and (max-height: 575.98px) {
+    .hero {
+        height: 100vh;
+        max-height: 90rem;
+        background: url("../img/hero-car.jpg") no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .hero .content {
+        padding-top: 3rem;
     }
 }

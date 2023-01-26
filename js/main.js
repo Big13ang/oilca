@@ -27,19 +27,4 @@ document.addEventListener('DOMContentLoaded', () => {
     questions.forEach(element => {
         element.addEventListener('click', e => toggleAccordion(element.parentElement))
     });
-    /* Lock Screen Orientation */
-    let $ = document.documentElement;
-    if ($.requestFullscreen) {
-        $.requestFullscreen();
-    } else if ($.mozRequestFullscreen) {
-        $.mozRequestFullscreen();
-    }
-
-    else if ($.webkitRequestFullscreen) {
-        $.webkitRequestFullscreen();
-    }
-    else if ($.msRequestFullscreen) {
-        $.msRequestFullscreen();
-    }
-    screen.orientation.lock("portrait");
 }, false);
