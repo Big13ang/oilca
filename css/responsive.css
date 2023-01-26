@@ -1113,7 +1113,7 @@
 }
 
 /* landscape */
-@media only screen and (orientation:landscape) and (max-height: 575.98px) {
+@media only screen and (orientation:landscape) and (max-height: 1080.98px) {
     .hero {
         height: 100vh;
         max-height: 90rem;
