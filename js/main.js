@@ -28,6 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
         element.addEventListener('click', e => toggleAccordion(element.parentElement))
     });
     /* Lock Screen Orientation */
-    screen.orientation.lock("portrait");
+    let $ = document.documentElement;
+    if ($.requestFullscreen) {
+        $.requestFullscreen();
+    } else if ($.mozRequestFullscreen) {
+        $.mozRequestFullscreen();
+    }
 
+    else if ($.webkitRequestFullscreen) {
+        $.webkitRequestFullscreen();
+    }
+    else if ($.msRequestFullscreen) {
+        $.msRequestFullscreen();
+    }
+    screen.orientation.lock("portrait");
 }, false);
