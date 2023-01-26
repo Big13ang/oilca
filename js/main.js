@@ -27,4 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     questions.forEach(element => {
         element.addEventListener('click', e => toggleAccordion(element.parentElement))
     });
+    /* Lock Screen Orientation */
+    screen.orientation.lock("portrait");
+
 }, false);
